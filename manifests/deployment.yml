@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: helloworldjavadockerks 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: helloworldjavadockerks
+  template:
+    metadata:
+      labels:
+        app: helloworldjavadockerks 
+    spec:
+      containers:
+        - name: helloworldjavadockerks 
+          image: myappreg.azurecr.io/helloworldjavadockerks
+          ports:
+          - containerPort: 8080

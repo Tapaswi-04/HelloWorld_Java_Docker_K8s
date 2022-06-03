@@ -1,5 +1,5 @@
 #Docker base image : Alpine Linux with OpenJDK JRE
-FROM sparkjava-hello-world 1.0
+FROM java-hello-world 1.0
 #Check the java version
 RUN ["java", "-version"]
 #Install maven

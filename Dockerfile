@@ -1,5 +1,5 @@
 #Docker base image : Alpine Linux with OpenJDK JRE
-FROM java-hello-world 1.0
+FROM openjdk:8
 #Check the java version
 RUN ["java", "-version"]
 #Install maven
